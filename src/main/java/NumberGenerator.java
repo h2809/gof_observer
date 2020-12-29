@@ -17,6 +17,7 @@ public abstract class NumberGenerator {
 
 		while (it.hasNext()) {
 			Observer o = (Observer)it.next();
+			// ObserverインスタンスにRandomNumberGeneratorインスタンスを渡し、通知を受ける
 			o.update(this);
 		}
 	}
